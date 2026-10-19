@@ -1,5 +1,5 @@
 /* ============================================================
-   NOVA GLASS Version 2.2 Beta — app logic (index.html + styles.css + theme.css + app.js)
+   NOVA GLASS Version 1.1 Beta — app logic (index.html + styles.css + theme.css + app.js)
    Sections:
    1. Constants & palettes
    2. Utilities
@@ -31,7 +31,7 @@
     backup: 'nova-tasks-backup'
   };
 
-  var APP_VERSION = '2.2.0-beta';
+  var APP_VERSION = '1.1.0-beta';
   var DEFAULT_CATEGORIES = ['Work', 'Personal', 'Study', 'Home'];
   var STATUSES = ['todo', 'progress', 'done'];
   var PRIORITIES = ['low', 'medium', 'high'];
@@ -1437,9 +1437,7 @@
           return '<button type="button" class="palette-option" data-palette="' + key + '" aria-pressed="' + (s.palette === key) + '" aria-label="' + esc(p.label) + '">' +
             '<span class="palette-swatch" style="background:' + p.preview + '"></span><span class="palette-name">' + esc(p.label) + '</span><span class="palette-desc">' + esc(p.desc) + '</span><span class="palette-check">' + icon('solar:check-circle-bold') + '</span></button>';
         }).join('') + '</div>' +
-      '<details class="settings-adv"><summary>Surface effects</summary>' +
-        sliderRow('glassTransparency', 'Surface translucency', 'Desktop only; phones use solid surfaces', s.glassTransparency, '%') +
-        sliderRow('blurIntensity', 'Blur', 'Desktop only', s.blurIntensity, 'px', 0, 30) +
+      '<details class="settings-adv"><summary>Fine tuning</summary>' +
         sliderRow('borderOpacity', 'Border strength', 'Visibility of outlines', s.borderOpacity, '%') +
         sliderRow('shadowIntensity', 'Shadow depth', 'Elevation of cards', s.shadowIntensity, '%') +
         sliderRow('backgroundIntensity', 'Background tint', 'Strength of the background gradient', s.backgroundIntensity, '%') +
@@ -1531,7 +1529,7 @@
     return '<div class="about-card">' +
       '<div class="about-logo">' + icon('solar:layers-minimalistic-linear') + '</div>' +
       '<div class="about-title">Nova Glass</div>' +
-      '<div class="about-version"><span class="beta-badge">Version 2.2 Beta</span> · ' + APP_VERSION + '</div>' +
+      '<div class="about-version"><span class="beta-badge">Version 1.1 Beta</span> · ' + APP_VERSION + '</div>' +
       '<p class="about-desc">A mobile-first task manager with a Midnight + Burgundy identity. Everything is stored on this device — nothing is uploaded.</p>' +
       '<div class="feature-list">' +
         featureItem('solar:add-circle-linear', 'Quick add', 'Type a title with a day, time, #category and !priority') +

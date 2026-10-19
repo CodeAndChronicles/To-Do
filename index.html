@@ -3,13 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Nova Glass Version 2.2 Beta — a mobile-first task manager with a Midnight + Burgundy design system.">
+<meta name="description" content="Nova Glass Version 1.1 Beta — a mobile-first task manager with a Midnight + Burgundy design system.">
 <meta name="theme-color" content="#0c1122" id="themeColorMeta">
 <meta name="color-scheme" content="light dark">
-<title>Nova Glass V2.2 Beta</title>
+<title>Nova Glass V1.1 Beta</title>
 <script id="iconifyScript" src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="theme.css">
+<link rel="stylesheet" href="app.css">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -21,7 +20,7 @@
     <div class="sidebar-head">
       <a class="logo" href="#/dashboard" id="logoLink">
         <span class="logo-icon"><iconify-icon icon="solar:layers-minimalistic-linear"></iconify-icon></span>
-        <span class="logo-text">Nova Glass <span class="beta-badge">V2.2 Beta</span></span>
+        <span class="logo-text">Nova Glass <span class="beta-badge">V1.1 Beta</span></span>
       </a>
       <button class="sidebar-toggle" id="sidebarToggle" aria-label="Collapse sidebar" title="Collapse sidebar">
         <iconify-icon icon="solar:double-alt-arrow-left-linear"></iconify-icon>
@@ -135,7 +134,7 @@
         <label for="taskSubs">Checklist <span class="opt">(one step per line)</span></label>
         <textarea class="textarea" id="taskSubs" dir="auto" maxlength="3000" rows="3" placeholder="Read chapter 3&#10;Solve exercises 1–5"></textarea>
       </div>
-      <label class="field" style="display:flex;align-items:center;gap:.55rem;cursor:pointer;padding:.6rem .7rem;border-radius:var(--radius-sm);background:var(--surface-3);border:1px solid var(--border-soft);">
+      <label class="field" style="display:flex;align-items:center;gap:.55rem;cursor:pointer;padding:.6rem .7rem;border-radius:var(--radius-sm);background:var(--inset);border:1px solid var(--line);">
         <input type="checkbox" id="taskReminder" style="width:18px;height:18px;accent-color:var(--primary);cursor:pointer;">
         <span style="font-size:.88rem;">Remind me when this task is due</span>
       </label>
